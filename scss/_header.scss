@@ -1,0 +1,105 @@
+/******** header css here *********/
+.header_part{
+    background-color: $white;
+    @media #{$medium_device}{
+        text-align: center;
+    }
+    .header_iner {
+        @media #{$tab}{
+            padding: 15px 0;
+        }
+    }
+    .sidebar_icon{
+        i{
+            font-size: 36px;
+        }
+    }
+    .logo{
+        @media #{$xs_mobile}{
+            img{
+                max-width: 80px;
+            }
+        }
+    }
+    .btn_1{
+        padding: 13px 32px !important;
+        @media #{$tab}{
+            padding: 10px 15px !important;
+            font-size: 12px;
+        }
+    }
+    .sub_header{
+        padding: 15px 0;
+        @media #{$mobile}{
+            text-align: center;
+         }
+         @media #{$tab}{
+            font-size: 14px;
+        }
+       i{
+           color: $base_color;
+           margin-right: 14px;
+       } 
+       a{
+         padding: 3px 30px;  
+         display: inline-block;
+         border-left: 1px solid $border_color;
+         color: $heading_color;
+         &:hover{
+            color: $base_color;
+        }
+         @media #{$mobile}{
+            display: block;
+            border-left: 0 solid transparent;
+         }
+         @media #{$tab_device}{
+            padding: 0 15px;
+        }
+         &:first-child{
+            padding: 0 30px 0 0;  
+            border-left: 0 solid transparent; 
+            @media #{$mobile}{
+                padding: 0 10px;
+            } 
+            @media #{$tab_device}{
+                padding: 0 15px;
+            }
+         }
+       }
+    }
+    .header_login_info{
+        @media #{$tab}{
+            font-size: 14px;
+        }
+        a{
+            @media #{$mobile}{
+               display: inline-block;
+            }
+            &:first-child{
+                padding: 0 18px;  
+             }
+            &:last-child{
+                padding: 0 0 0 18px;  
+                @media #{$mobile}{
+                    padding: 0 14px;
+
+                } 
+                @media #{$tab_device}{
+                    padding: 0 0 0 15px;  
+                }
+            }
+        }
+        
+    }
+    .header_login_info{
+        text-align: right;
+        @media #{$mobile}{
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid $border_color_1;
+            margin-top: 15px;
+        }
+    }
+}
+
+/******** header css end *********/

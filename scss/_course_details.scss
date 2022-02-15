@@ -1,0 +1,176 @@
+.course_details{
+    overflow: hidden;
+    margin-top: -80px;
+    z-index: 9;
+    position: relative;
+    @media #{$mobile}{
+        margin-top: 0;
+    }
+    .single_course_list{
+        margin-top: 60px;
+        @media #{$mobile}{
+            margin-top: 30px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+        img{
+            max-width: 55px;
+        }
+        h4{
+            margin: 25px 0 13px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    
+    .course_details_iner{
+        margin-top: 73px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .single_course_list{
+            flex: 40% 0 0;
+            @media #{$xs_mobile}{
+                flex: 100% 0 0;
+            }
+            @media #{$tab_device}{
+                flex: 48% 0 0;
+            }
+        }
+    }
+    .course_registration_form{
+        background-color: $white;
+        box-shadow: 0px 30px 60px 0px rgba(2, 25, 55, 0.08);
+        border-radius: 10px;
+        padding: 45px 40px 40px;
+        @media #{$mobile}{
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media #{$tab_device}{
+            padding: 20px;
+        }
+        h3{
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 33px;
+            line-height: 34px;
+            @media #{$mobile}{
+               font-size: 20px;
+               line-height: 28px;
+               margin-bottom: 15px;
+            }
+            @media #{$tab_device}{
+               font-size: 20px;
+               line-height: 28px;
+            }
+        }
+        input, .niceSelect{
+            border-radius: 50px;
+            display: block;
+            width: 100%;
+            background-color: $section_bg_1;
+            padding: 19px 25px;
+            color: $text_color_1;
+            margin-bottom: 20px;
+            border: 2px solid $section_bg_1;
+            height: auto;
+            line-height: 18px;
+            font-size: 16px;
+            @include transform_time(.5s);
+            &:focus{
+                background-color: transparent;
+                border: 2px solid $border_color_1;
+                color: $heading_color;
+            }
+            &:after{
+                top: 24px;
+                right: 34px;
+                font-size: 24px;
+            }
+            @media #{$mobile}{
+                font-size: 14px;
+                padding: 9px 25px;
+                &:after {
+                    right: 27px;
+                    font-size: 24px;
+                    top: 12px;
+                }
+             }
+        }
+        .btn_1{
+            margin-top: 10px;
+            padding: 13px 36px;
+        }
+    }
+    .course_registration{
+        position: relative;
+        z-index: 1;
+        
+        @media #{$tab_device}{
+            margin-top: 35px;
+        }
+        .cources_details_bg{
+            position: absolute;
+            right: -60px;
+            bottom: -85px;
+            z-index: -1;
+        }
+        .cources_details_icon{
+            position: absolute;
+            right: -73px;
+            bottom: 50px;
+            z-index: -1;
+        }
+    }
+}
+.countdown{
+    margin-top: 80px;
+    border-top: 1px solid $border_color;
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    @media #{$mobile}{
+        margin-top: 30px;
+     }
+     @media #{$tab_device}{
+        margin-top: 30px;
+     }
+    .time{
+        font-size: 30px;
+        margin-right: 20px;
+        color: $base_color;
+        line-height: 35px;
+        font-weight: 600;
+        &:last-child{
+            margin-right: 0;
+        }
+        @media #{$mobile}{
+            font-size: 20px;
+            line-height: 28px;
+        }
+        @media #{$tab_device}{
+            font-size: 20px;
+            line-height: 28px;
+            margin-right: 12px;
+        }
+        
+        span{
+            font-size: 16px;
+            color: #727881;
+            font-weight: 400;
+            display: block;
+            line-height: 20px;
+            @media #{$mobile}{
+                font-size: 14px;
+                line-height: 16px;
+            }
+            @media #{$tab_device}{
+                line-height: 32px;
+                font-size: 13px;
+            }
+        }
+    }
+    
+}

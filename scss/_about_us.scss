@@ -1,0 +1,168 @@
+.about_us{
+    position: relative;
+    .about_us_img{
+        position: relative;
+        img{
+            border-radius: 10px;
+        }
+        @media #{$mobile}{
+            margin-bottom: 35px;
+        }
+    }
+    .about_icon{
+        position: absolute;
+        top: -41px;
+        z-index: 1;
+        left: 64px;
+    }
+    .about_tricker{
+        position: absolute;
+        top: -60px;
+        left: -60px;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        background-color: $base_color;
+        text-align: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 2;
+        @media #{$mobile}{
+            top: -50px;
+            left: -10px;
+            height: 80px;
+            width: 80px;
+        } 
+        @media #{$tab_device}{
+            top: -50px;
+            left: -10px;
+            height: 80px;
+            width: 80px;
+        }
+        @media #{$medium_device}{
+            top: -50px;
+            left: -10px;
+            height: 100px;
+            width: 100px;
+        }
+    }
+    .tricker_iner{
+        p{
+           text-transform: uppercase; 
+           color: $white;
+           line-height: 25px;
+           @media #{$mobile}{
+                font-size: 10px; 
+                line-height: 16px;
+            }
+            @media #{$tab_device}{
+                font-size: 10px; 
+                line-height: 16px;
+            }
+            @media #{$medium_device}{
+                font-size: 14px; 
+                line-height: 26px;
+            }
+        }
+        span{
+            font-size: 40px;
+            font-weight: 700;
+            color: $white;
+            margin-bottom: 0;
+            line-height: 43px;
+            @media #{$mobile}{
+                font-size: 18px; 
+                line-height: 25px;
+            }
+            @media #{$tab_device}{
+                font-size: 18px; 
+                line-height: 25px;
+            }
+            @media #{$medium_device}{
+                font-size: 18px; 
+                line-height: 25px;
+            }
+        }
+    }
+    .about_us_details{
+        h2{
+            font-size: 50px;
+            line-height: 64px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            @media #{$mobile}{
+                font-size: 25px; 
+                line-height: 32px;
+                margin-bottom: 15px;
+            }
+            @media #{$tab_device}{
+                font-size: 25px; 
+                line-height: 32px;
+                margin-bottom: 15px;
+            }
+        }
+        h3{
+           font-size: 24px;
+           color: $base_color;
+           margin-bottom: 35px;
+           font-weight: 300;
+           @media #{$mobile}{
+                font-size: 14px; 
+                line-height: 24px;
+                margin-bottom: 10px;
+            } 
+            @media #{$tab}{
+                font-size: 14px; 
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+           span{
+               color: $heading_color;
+               font-weight: 500;
+           } 
+        }
+        p{
+            margin-bottom: 36px;
+            line-height: 28px;
+            @media #{$mobile}{
+                margin-bottom: 20px;
+            }
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+        }
+        .btn_1{
+            margin-top: 21px;
+            padding: 15px 44px;
+            box-shadow: 0px 20px 40px 0px rgba(68, 134, 254, 0.2);
+            &:hover{
+                box-shadow: none;
+            }
+        }
+    }
+    .about_sharp_1{
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+    }
+    .about_sharp_2{
+        position: absolute;
+        bottom: 440px;
+        right: 75px;
+    }
+    .about_sharp_3{
+        position: absolute;
+        bottom: 425px;
+        right: 125px;
+    }
+}
+.single_about_page{
+    padding: 180px 0 120px;
+    @media #{$tab}{
+        padding: 120px 0 70px;
+    }
+    @media #{$medium_device}{
+        padding: 130px 0 100px;
+    }
+}

@@ -1,0 +1,102 @@
+.eventcountdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $base_color;
+    border-radius: 5px;
+    margin-top: 30px;
+    .time{
+        flex: 25% 0 0;
+        font-size: 30px;
+        color: $white;
+        padding: 19px;
+        font-weight: 600;
+        padding-left: 10%;
+        border-right: 1px solid #3b80ff;
+        line-height: 26px;
+        @media #{$mobile}{
+            flex: 50% 0 0;
+        }
+        &:last-child{
+            border-right: 0px solid transparent;
+        }
+        span{
+            font-size: 16px;
+            display: block !important;
+            font-weight: 400;
+        }
+    }
+}
+.upcoming_event_desc{
+    margin-top: 44px;
+    @media #{$mobile}{
+        margin-top: 20px;
+    }
+    h2{
+        font-size: 26px;
+        margin-top: 15px;
+        @media #{$mobile}{
+            margin-top: 20px;
+            line-height: 35px;
+        }
+    }
+    p{
+        margin: 12px 0;
+        i{
+            color: $base_color;
+            margin-right: 15px;
+        }
+    }
+    .event_desc_list{
+        h4{
+            font-size: 18px;
+            margin: 38px 0 30px;
+        }
+    }
+}
+.upcoming_event_details{
+    .instructor_list{
+        h3{
+            font-size: 26px;
+            margin-bottom: 43px;
+            font-weight: 700;
+        }
+    }
+    .single_sidebar{
+        p{
+            i{
+                color: $base_color;
+            }
+        }
+    }
+
+}
+.education_sidebar{
+    .contactMap {
+        height: 150px;
+        border: 2px solid #cbe0fb;
+        border-radius: 5px;
+        margin-bottom: 27px;
+    }
+    #contactMap {
+        height: 100% !important;
+    }
+    .gmnoprint{
+        display: none;
+    }
+}
+// .upcoming_event_details {
+//     .education_sidebar{
+//         @media #{$tab}{
+//             margin-top: 0 !important;
+//         }
+//         @media #{$mobile}{
+//             margin-top: 60px !important;
+//         }
+//     }
+// }
+.upcoming_event_details {
+    .add_cart_sidebar{
+        padding: 27px 30px 37px !important;
+    }
+}

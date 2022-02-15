@@ -1,0 +1,179 @@
+.motivation{
+    height: 720px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @media #{$mobile}{
+        display: block;
+        height: auto;
+        padding: 70px 0;
+    }
+    @media #{$tab_device}{
+        height: 600px;
+    }
+    h2{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 26px;
+        font-weight: 600;
+        @media #{$mobile}{
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 15px;
+        }
+        @media #{$tab_device}{
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 15px;
+        }
+    }
+    p{
+        margin-bottom: 33px;
+    }
+    
+    .single_item{
+        width: 270px;
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: $white;
+        margin-top: 20px;
+        box-shadow: 0px 20px 40px 0px rgba(2, 25, 55, 0.06);
+        border-radius: 4px;
+        @include transform_time(.5s);
+        @media #{$mobile}{
+            width: 100%;
+        }
+        i{
+            color: $text_color;
+            margin-right: 20px;
+        }
+        i, p{
+            margin-bottom: 0;
+            @include transform_time(.5s);
+        }
+        &:hover{
+            i, p{
+               color: $base_color;
+            } 
+        }
+        &.active{
+            i, p{
+                color: $base_color;
+             } 
+        }
+    }
+   
+    
+    
+}
+.motivation_video{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    span{
+        max-width: 16px;
+        color: $base_color;
+        text-shadow: 0px 10px 16px rgba(37, 114, 255, .4);
+        @include transform_time(.5s);
+    }
+    a{
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        background-color: $white;
+        border-radius: 50%;
+        display: inline-block;
+        @media #{$tab}{
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+        }
+        &:hover{
+            span{
+                color: $base_color;
+                text-shadow: none;
+            }
+        }
+    }
+    
+}
+.motivation_video{
+    @include background("img/motivation_video_bg.png");
+}
+.bg_1{
+    @include background("img/banner.jpg");
+}
+.bg_2{
+    @include background("img/course_thumb.png");
+}
+
+.motivation_content{
+    .nav-tabs .nav-link {
+        border: 0 solid transparent;
+    }
+    .nav-tabs {
+        border-bottom: 0 solid transparent;
+    }
+    .nav-item{
+        @media #{$xs_mobile}{
+            width: 100%;
+        }
+    }
+}
+.animated_play_button{
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-20%) translateY(-20%);
+        display: block;
+        width: 120px;
+        height: 120px;
+        // background: rgba($color: $white, $alpha: .4);
+        border: 2px solid rgba($color: $white, $alpha: .4);
+        border-radius: 50%;
+        animation: animated_border 1500ms ease-in-out infinite;
+        @media #{$tab}{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+@media #{$mobile}{
+    .motivation_video{
+        position: relative;
+        left: 15px;
+        width: 90%;
+        margin-top: 30px;
+        height: 300px;
+    }
+}
+@keyframes animated_border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.4);
+        opacity: 0;
+    }
+}
+@keyframes animated_border_2 {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.2);
+        opacity: 0;
+    }
+}
