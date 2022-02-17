@@ -1099,7 +1099,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 @media (max-width: 991px) {
   /* line 7, D:/February/education/education_HTML/scss/_header.scss */
   .header_part .header_iner {
-    padding: 15px 0;
+    padding: 0px 0;
   }
 }
 
@@ -1109,10 +1109,32 @@ a:focus, .button:focus, button:focus, .btn:focus {
 }
 
 @media (max-width: 576px) {
+  /* .header_part{
+    margin-bottom: 10px;
+  } */
   /* line 19, D:/February/education/education_HTML/scss/_header.scss */
   .header_part .logo img {
-    max-width: 80px;
+    /* max-width: 80px; */
+    display: none;
   }
+  .header_part .logo h2{
+    position: sticky;
+    font-size: 31px;
+    margin-top: 3px;
+
+  }
+}
+
+.logo img{
+  float: left;
+  width: 20%;
+}
+.logo h2{
+  position: relative;
+  /* font-size: 30px; */
+  left: 8px;
+  margin-top: 0.5em;
+
 }
 
 /* line 24, D:/February/education/education_HTML/scss/_header.scss */
@@ -1910,7 +1932,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 
 /* line 48, D:/February/education/education_HTML/scss/_banner_part.scss */
 .banner_part .bg_1 {
-  background-image: url("../img/banner.png");
+  background-image: url("../img/slider_2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1918,7 +1940,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 
 /* line 51, D:/February/education/education_HTML/scss/_banner_part.scss */
 .banner_part .bg_2 {
-  background-image: url("../img/banner_1.png");
+  background-image: url("../img/slider_3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
