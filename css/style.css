@@ -30,7 +30,7 @@ input:hover, input:focus {
   border-color: #dce1e9;
 }
 .section_padding {
-  padding: 120px 0px;
+  padding: 70px 0px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .section_padding {
@@ -1977,6 +1977,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   box-shadow: 0px 30px 50px 0px rgba(2, 25, 55, 0.08);
 }
 .popular_course .single_courses_item img {
+
   border-radius: 10px 10px 0 0;
 }
 .popular_course .single_courses_item h4 {
@@ -2051,7 +2052,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   display: flex;
   align-items: center;
 }
-.courses_review .courses_btn {
+ .courses_btn {
   font-size: 9px;
   padding: 5px 10px;
   line-height: 14px;
@@ -2182,6 +2183,12 @@ a:focus, .button:focus, button:focus, .btn:focus {
     padding-top: 15px;
   }
 }
+
+.course_category .section_grid{
+  background-color: #f6f7fa;
+  padding: 70px 0px;
+}
+
 .course_category .single_category_item {
   display: block;
   text-align: center;
