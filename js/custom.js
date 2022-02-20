@@ -106,8 +106,8 @@
   var popular_courses = $(".popular_courses_item");
   if (popular_courses.length) {
       popular_courses.owlCarousel({
-          items: 3,
-          loop: true,
+          items: 2,
+          loop: false,
           nav: false,
           dots: true,
           autoplay: true,
@@ -126,7 +126,7 @@
                   items: 2
               },
               1200: {
-                  items: 3
+                  items: 2
               }
           }
 
@@ -157,12 +157,13 @@
           items: 4,
           loop: true,
           margin: 30,
-          nav: false,
+          nav: true,
           dots: true,
-          autoplayHoverPause: true,
+          autoplayHoverPause: false,
           autoplay: true,
-          smartSpeed: 300,
-          dotsSpeed: 300,
+          autoplaySpeed:250,
+        //   smartSpeed: 500,
+        //   dotsSpeed: 1000,
           responsiveClass: true,
           responsive: {
               0: {
@@ -178,11 +179,15 @@
                   items: 3
               },
               1200: {
-                  items: 4
+                  items: 5
               }
           }
       });
   }
+
+
+
+  
 
   //time countdow
   $(document).ready(function() {
