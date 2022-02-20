@@ -1471,7 +1471,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   background-size: cover;
 }
 .banner_part .bg_3 {
-  background-image: url("../img/banner_2.png");
+  background-image: url("../img/slider_4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1866,51 +1866,52 @@ a:focus, .button:focus, button:focus, .btn:focus {
     line-height: 25px;
   }
 }
-.about_us .about_us_details h2 {
+.about_us_details h2 {
   font-size: 50px;
   line-height: 64px;
-  margin-bottom: 20px;
+ padding-top: 30px;
+  margin-top: 20px;
   font-weight: 600;
 }
 @media (max-width: 767.98px) {
-  .about_us .about_us_details h2 {
+.about_us_details h2 {
     font-size: 25px;
     line-height: 32px;
     margin-bottom: 15px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .about_us .about_us_details h2 {
+.about_us_details h2 {
     font-size: 25px;
     line-height: 32px;
     margin-bottom: 15px;
   }
 }
-.about_us .about_us_details h3 {
+.about_us_details h3 {
   font-size: 24px;
   color: #2572ff;
   margin-bottom: 35px;
   font-weight: 300;
 }
 @media (max-width: 767.98px) {
-  .about_us .about_us_details h3 {
+.about_us_details h3 {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 991px) {
-  .about_us .about_us_details h3 {
+ .about_us_details h3 {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 10px;
   }
 }
-.about_us .about_us_details h3 span {
+.about_us_details h3 span {
   color: #0b1c39;
   font-weight: 500;
 }
-.about_us .about_us_details p {
+.about_us_details p {
   margin-bottom: 36px;
   line-height: 28px;
 }
@@ -1920,29 +1921,29 @@ a:focus, .button:focus, button:focus, .btn:focus {
   }
 }
 @media (max-width: 991px) {
-  .about_us .about_us_details p {
+.about_us_details p {
     margin-bottom: 20px;
   }
 }
-.about_us .about_us_details .btn_1 {
+.about_us_details .btn_1 {
   margin-top: 21px;
   padding: 15px 44px;
   box-shadow: 0px 20px 40px 0px rgba(68, 134, 254, 0.2);
 }
-.about_us .about_us_details .btn_1:hover {
+.about_us_details .btn_1:hover {
   box-shadow: none;
 }
-.about_us .about_sharp_1 {
+ .about_sharp_1 {
   position: absolute;
   bottom: 50px;
   right: 0;
 }
-.about_us .about_sharp_2 {
+.about_sharp_2 {
   position: absolute;
   bottom: 440px;
   right: 75px;
 }
-.about_us .about_sharp_3 {
+.about_sharp_3 {
   position: absolute;
   bottom: 425px;
   right: 125px;
@@ -2051,7 +2052,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   align-items: center;
 }
 .courses_review .courses_btn {
-  font-size: 14px;
+  font-size: 9px;
   padding: 5px 10px;
   line-height: 14px;
   background-color: #2572ff;
