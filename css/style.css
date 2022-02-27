@@ -4618,9 +4618,9 @@ a:focus, .button:focus, button:focus, .btn:focus {
     margin-top: 30px;
   }
 }
-.footer_section .single_feature_footer img {
+/* .footer_section .single_feature_footer img {
 
-}
+} */
 @media (max-width: 767.98px) {
   .footer_section .single_feature_footer img {
     margin-bottom: 15px;
