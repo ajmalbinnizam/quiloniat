@@ -1254,7 +1254,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   color: #2572ff;
 }
 .breadcrumb_part {
-  background-image: url("../img/breadcrumb_bg.png");
+  background-image: url("../img/about-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1401,8 +1401,11 @@ a:focus, .button:focus, button:focus, .btn:focus {
   margin-right: 10px;
 }
 .grid_bg {
-  background-image: url(../img/breadcrumb_bg/grid_breadcrumg.png);
+  /* background-image: url("https://t3.ftcdn.net/jpg/04/34/09/90/360_F_434099061_C1lA1OE8uWeZqFMMXHeKBPW84wjbSRxV.jpg"); */
+  background-image: url("https://www.a1tireandautofletcher.com/images/banner-services.jpg");
+
 }
+
 .blog_grid_bg {
   background-image: url(../img/breadcrumb_bg/blog_breadcrumg.png);
 }
@@ -1640,14 +1643,14 @@ a:focus, .button:focus, button:focus, .btn:focus {
     line-height: 28px;
   }
 }
-.course_details .course_registration_form input, .course_details .course_registration_form .niceSelect {
+.course_details .course_registration_form input, .niceSelect {
   border-radius: 50px;
   display: block;
   width: 100%;
   background-color: #f0f3f7;
   padding: 19px 25px;
   color: #7c8189;
-  margin-bottom: 20px;
+  
   border: 2px solid #f0f3f7;
   height: auto;
   line-height: 18px;
@@ -1655,22 +1658,26 @@ a:focus, .button:focus, button:focus, .btn:focus {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.course_details .course_registration_form input:focus, .course_details .course_registration_form .niceSelect:focus {
+.course_details .course_registration_form input, .course_details .course_registration_form .niceSelect {
+  margin-bottom: 20px;
+}
+
+.course_details .course_registration_form input:focus, .niceSelect:focus {
   background-color: transparent;
   border: 2px solid #cbe0fb;
   color: #0b1c39;
 }
-.course_details .course_registration_form input:after, .course_details .course_registration_form .niceSelect:after {
+.course_details .course_registration_form input:after, .niceSelect:after {
   top: 24px;
   right: 34px;
   font-size: 24px;
 }
 @media (max-width: 767.98px) {
-  .course_details .course_registration_form input, .course_details .course_registration_form .niceSelect {
+  .course_details .course_registration_form input, .niceSelect {
     font-size: 14px;
-    padding: 9px 25px;
+    /* padding: 9px 25px; */
   }
-  .course_details .course_registration_form input:after, .course_details .course_registration_form .niceSelect:after {
+  .course_details .course_registration_form input:after, .niceSelect:after {
     right: 27px;
     font-size: 24px;
     top: 12px;
@@ -2499,7 +2506,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   background-size: cover;
 }
 .bg_2 {
-  background-image: url("../img/course_thumb.png");
+  background-image: url("../img/slider_4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4588,7 +4595,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   color: #2572ff;
 }
 .footer_section {
-  padding: 120px 0 37px;
+  padding: 60px 0 20px;
   position: relative;
 }
 @media (max-width: 767.98px) {
@@ -4612,7 +4619,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   }
 }
 .footer_section .single_feature_footer img {
-  margin-bottom: 35px;
+
 }
 @media (max-width: 767.98px) {
   .footer_section .single_feature_footer img {
@@ -4620,7 +4627,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   }
 }
 .footer_section .footer_contact_info {
-  margin-top: 37px;
+  margin-top: 17px;
 }
 @media (max-width: 767.98px) {
   .footer_section .footer_contact_info {
@@ -4676,9 +4683,12 @@ a:focus, .button:focus, button:focus, .btn:focus {
   color: #2572ff;
 }
 .footer_section .copyright_part {
-  margin-top: 67px;
+  margin-top: 15px;
   border-top: 1px solid #dce1e9;
   padding-top: 18px;
+}
+.footer_section .footer_para{
+ text-align: center;
 }
 @media (max-width: 767.98px) {
   .footer_section .copyright_part p {
@@ -4720,7 +4730,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
   }
 }
 .social_icon {
-  float: right;
+  float: left;
 }
 @media (max-width: 767.98px) {
   .social_icon {

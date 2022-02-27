@@ -268,35 +268,35 @@
       $(".spinner").delay(1000).fadeOut("slow");
   });
 
-  // map js
-  if ($('#contactMap').length) {
-      var $lat = $('#contactMap').data('lat');
-      var $lon = $('#contactMap').data('lon');
-      var $zoom = $('#contactMap').data('zoom');
-      var $marker = $('#contactMap').data('marker');
-      var $info = $('#contactMap').data('info');
-      var $markerLat = $('#contactMap').data('mlat');
-      var $markerLon = $('#contactMap').data('mlon');
-      var map = new GMaps({
-          el: '#contactMap',
-          lat: $lat,
-          lng: $lon,
-          scrollwheel: false,
-          scaleControl: true,
-          streetViewControl: false,
-          panControl: true,
-          disableDoubleClickZoom: true,
-          mapTypeControl: false,
-          zoom: $zoom,
-      });
-      map.addMarker({
-          lat: $markerLat,
-          lng: $markerLon,
-          icon: $marker,
-          infoWindow: {
-              content: $info
-          }
-      })
-  }
+//   // map js
+//   if ($('#contactMap').length) {
+//       var $lat = $('#contactMap').data('lat');
+//       var $lon = $('#contactMap').data('lon');
+//       var $zoom = $('#contactMap').data('zoom');
+//       var $marker = $('#contactMap').data('marker');
+//       var $info = $('#contactMap').data('info');
+//       var $markerLat = $('#contactMap').data('mlat');
+//       var $markerLon = $('#contactMap').data('mlon');
+//       var map = new GMaps({
+//           el: '#contactMap',
+//           lat: $lat,
+//           lng: $lon,
+//           scrollwheel: false,
+//           scaleControl: true,
+//           streetViewControl: false,
+//           panControl: true,
+//           disableDoubleClickZoom: true,
+//           mapTypeControl: false,
+//           zoom: $zoom,
+//       });
+//       map.addMarker({
+//           lat: $markerLat,
+//           lng: $markerLon,
+//           icon: $marker,
+//           infoWindow: {
+//               content: $info
+//           }
+//       })
+//   }
 
 }(jQuery));
