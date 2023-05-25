@@ -102,10 +102,10 @@
       // });
   }
 
-  //popular courses js
-  var popular_courses = $(".popular_courses_item");
-  if (popular_courses.length) {
-      popular_courses.owlCarousel({
+  //popular Services js
+  var popular_Services = $(".popular_Services_item");
+  if (popular_Services.length) {
+      popular_Services.owlCarousel({
           items: 2,
           loop: false,
           nav: false,
@@ -132,7 +132,7 @@
 
       });
   }
-  //popular courses js
+  //popular Services js
   var student_review = $(".student_review_iner");
   if (student_review.length) {
       student_review.owlCarousel({
@@ -150,7 +150,7 @@
       });
   }
 
-  //popular courses js
+  //popular Services js
   var course_category = $(".course_category_item");
   if (course_category.length) {
       course_category.owlCarousel({
@@ -191,7 +191,7 @@
 
   //time countdow
   $(document).ready(function() {
-      function coursesTimer() {
+      function ServicesTimer() {
           var endTime = new Date("21 March 2020 9:56:00 GMT+01:00");
           endTime = (Date.parse(endTime) / 1000);
           var now = new Date();
@@ -216,7 +216,7 @@
           $("#seconds").html(seconds + "<span>Seconds</span>");
       }
       setInterval(function() {
-          coursesTimer();
+          ServicesTimer();
       }, 1000);
   });
 
